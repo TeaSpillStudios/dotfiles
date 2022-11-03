@@ -1,24 +1,26 @@
 #!/usr/bin/env bash
 
+cat ./banner
+
 cleanup() {
-  mv ~/.config/alacritty ~/.config/alacritty.bak
-  mv ~/.config/dunst ~/.config/dunst.bak
-  mv ~/.config/i3 ~/.config/i3.bak
-  mv ~/.config/nvim ~/.config/nvim.bak
-  mv ~/.config/picom ~/.config/picom.bak
-  mv ~/.config/polybar ~/.config/polybar.bak
-  mv ~/.config/rofi ~/.config/rofi.bak
+  mv ~/.config/alacritty ~/.config/alacritty.bak -f
+  mv ~/.config/dunst ~/.config/dunst.bak -f
+  mv ~/.config/i3 ~/.config/i3.bak -f
+  mv ~/.config/nvim ~/.config/nvim.bak -f
+  mv ~/.config/picom ~/.config/picom.bak -f
+  mv ~/.config/polybar ~/.config/polybar.bak -f
+  mv ~/.config/rofi ~/.config/rofi.bak -f
 }
 
 copy() {
-  cp ./alacritty ~/.config/alacritty -r
-  cp ./dunst ~/.config/dunst -r
-  cp ./i3 ~/.config/i3 -r
-  cp ./nvim ~/.config/nvim -r
-  cp ./picom ~/.config/picom -r
-  cp ./polybar ~/.config/polybar -r
-  cp ./rofi ~/.config/rofi -r
+  cp ./alacritty ~/.config/alacritty -rf
+  cp ./dunst ~/.config/dunst -rf
+  cp ./i3 ~/.config/i3 -rf
+  cp ./nvim ~/.config/nvim -rf
+  cp ./picom ~/.config/picom -rf
+  cp ./polybar ~/.config/polybar -rf
+  cp ./rofi ~/.config/rofi -rf
 }
 
-# cleanup
+cleanup
 copy
