@@ -11,13 +11,13 @@ cleanup() {
 }
 
 copy() {
-  cp ./alacritty ~/.config/alacritty.bak
-  cp ./dunst ~/.config/dunst.bak
-  cp ./i3 ~/.config/i3.bak
-  cp ./nvim ~/.config/nvim.bak
-  cp ./picom ~/.config/picom.bak
-  cp ./polybar ~/.config/polybar.bak
-  cp ./rofi ~/.config/rofi.bak
+  cp ./alacritty ~/.config/alacritty.bak -r
+  cp ./dunst ~/.config/dunst.bak -r
+  cp ./i3 ~/.config/i3.bak -r
+  cp ./nvim ~/.config/nvim.bak -r
+  cp ./picom ~/.config/picom.bak -r
+  cp ./polybar ~/.config/polybar.bak -r
+  cp ./rofi ~/.config/rofi.bak -r
 }
 
 cleanup
