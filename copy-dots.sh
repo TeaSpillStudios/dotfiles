@@ -10,11 +10,11 @@ backup() {
 }
 
 copy() {
-  cp ./dots/dots/dunst ~/.config/ -rf
+  cp ./dots/dunst ~/.config/ -rf
   cp ./dots/nvim ~/.config/ -rf
   cp ./dots/picom ~/.config/ -rf
   cp ./dots/polybar ~/.config/ -rf
-  cp ./dots/bspm ~/.config/ -rf
+  cp ./dots/bspwm ~/.config/ -rf
   cp ./dots/sxhkd ~/.config/ -rf
 }
 
