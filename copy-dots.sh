@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-cat ./banner
-
 backup() {
   mv ~/.config/dunst ~/.config/dunst.bak -f
   mv ~/.config/nvim ~/.config/nvim.bak -f
