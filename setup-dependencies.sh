@@ -4,7 +4,7 @@ declare -a packageArray
 mapfile -t packageArray < ./resources/packages
 
 for package in "${packageArray[@]}"; do
-	sudo pacman -Sy $package
+	sudo pacman -Sy $package --noconfirm
 done
 
 i3lock-color() {
