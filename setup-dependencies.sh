@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 declare -a packageArray
-mapfile -t packageArray < ./packages
+mapfile -t packageArray < ./resources/packages
 
 for package in "${packageArray[@]}"; do
 	sudo pacman -Sy $package
