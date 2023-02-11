@@ -10,10 +10,10 @@ backup() {
 }
 
 copy() {
-  cp ./dunst ~/.config/dunst -rf
-  cp ./nvim ~/.config/nvim -rf
-  cp ./picom ~/.config/picom -rf
-  cp ./polybar ~/.config/polybar -rf
+  cp ./dunst ~/.config/ -rf
+  cp ./nvim ~/.config/ -rf
+  cp ./picom ~/.config/ -rf
+  cp ./polybar ~/.config/ -rf
 }
 
 backup
