@@ -18,5 +18,14 @@ xautolock() {
 	wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
 }
 
+paru() {
+	cd /opt
+	sudo git clone https://aur.archlinux.org/paru-git.git
+	sudo chown $(whoami):$(whoami) -R ./paru-git/
+	cd ./paru-git/
+	makepkg -si
+}
+
 i3lock-color
 xautolock
+paru
