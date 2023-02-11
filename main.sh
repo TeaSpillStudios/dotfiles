@@ -2,7 +2,7 @@
 
 cat ./banner
 
-cleanup() {
+backup() {
   mv ~/.config/dunst ~/.config/dunst.bak -f
   mv ~/.config/nvim ~/.config/nvim.bak -f
   mv ~/.config/picom ~/.config/picom.bak -f
@@ -16,5 +16,5 @@ copy() {
   cp ./polybar ~/.config/polybar -rf
 }
 
-cleanup
+backup
 copy
