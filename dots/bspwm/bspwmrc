@@ -15,6 +15,7 @@ polybar -r bar1 &
 
 # mpd 
 xautolock -detectsleep -time 10 -locker "betterlockscreen -l dim" -notify 30 -notifier "notify-send -u critical -t 30 -- 'LOCKING screen in 30 seconds'" &
+feh --bg-fill $HOME/Pictures/Wallpapers/catppuccin/waves.png
 # ##############################################################################
 # #                            GENERAL CONFIGURATION                           #
 # ##############################################################################
